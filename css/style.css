@@ -1,203 +1,199 @@
 /* * sidebar */
 
 #btnUp {
-    position: fixed;
-    bottom: 30px;
-    right: 35px;
-    z-index: 100;
-    background-color: #22556b;
-
+  position: fixed;
+  bottom: 30px;
+  right: 35px;
+  z-index: 200;
+  /* width: 50%; */
+  background-color: #22556b;
 }
 
-
-
 #sidebar {
-    width: 250px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    /* left: -250px; */
-    background-color: #162d37;
-    transition: left 0.3s;
-    position: fixed;
-    z-index: 1;
-    height: 100%;
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  /* left: -250px; */
+  background-color: #162d37;
+  transition: left 0.3s;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
 }
 
 .toggle-btn {
-    position: absolute;
-    top: 100px;
-    left: 280px;
-    cursor: pointer;
-    z-index: 1;
-    color: #fff;
+  position: absolute;
+  top: 100px;
+  left: 250px;
+  cursor: pointer;
+  z-index: 1;
+  color: #fff;
 }
 
 .toggle-btn span {
-    display: block;
-    width: 30px;
-    height: 5px;
-    background-color: #fff;
-    margin: 6px 0;
-    transition: 0.3s;
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.3s;
 }
 
 #close {
-    color: #fff;
-    font-size: 40px;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    cursor: pointer;
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
 }
 
 .sidebar-content {
-
-    padding-top: 60px;
+  padding-top: 60px;
 }
 
 .sidebar-content a {
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
 }
 
 .sidebar-content a:hover {
-    background-color: #23272b;
+  background-color: #23272b;
 }
 
 .toggle-btn h1 {
-    padding: 0 0 0 4px;
+  padding: 0 0 0 4px;
 }
 
 /* * home section */
 
 #Home {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/bg1.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  color: #fff;
 }
 
 #Home h1 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* * slideDown section */
 
-#Duration {
-    background-color: #0C1E25;
-    padding: 100px 250px;
+.bg-slideDown {
+  background-color: #0c1e25;
+  /* padding: 100px 250px; */
 }
 
 .slideDown-content {
-    color: #fff;
-    padding: 20px 50px;
+  color: #fff;
+  padding: 20px 50px;
 }
 
 .slideDown-content h3 {
-    padding-bottom: 10px;
-    cursor: pointer;
+  padding-bottom: 10px;
+  cursor: pointer;
 }
 
 .slideDown-content p {
-    padding: 30px;
-    background-color: #1f3740;
-    border-radius: 50px;
+  padding: 30px;
+  background-color: #1f3740;
+  border-radius: 50px;
 }
 
 .slideDownss-content {
-    background-color: #102933;
-    border-radius: 50px;
+  background-color: #102933;
+  border-radius: 50px;
 }
 
 /* counter */
 
 #Details {
-    background-color: #162d37;
-    padding: 60px 0;
+  background-color: #162d37;
+  padding: 60px 0;
 }
 
 #Details .tim {
-    padding: 50px 50px;
-    border: #fff 2px solid;
-    border-radius: 30px;
-    background-color: #22556b;
-    color: #fff;
-    font-size: 30px;
+  padding: 50px 50px;
+  border: #fff 2px solid;
+  border-radius: 30px;
+  background-color: #22556b;
+  color: #fff;
+  font-size: 30px;
 }
 
 /* START Contact SECTION */
 
-
 #Contact {
-    color: #fff;
-    background-color: #102933;
+  color: #fff;
+  background-color: #102933;
 }
 
 #Contact h1 {
-    font-weight: 500;
-    font-size: 2.5rem;
+  font-weight: 500;
+  font-size: 2.5rem;
 }
 
 .btn-form {
-    color: #fff;
-    border: 1px solid;
-    border-radius: 5px;
-    margin-right: .25rem;
-    transition: all .3s;
-    margin-left: 8.6%;
+  color: #fff;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-right: 0.25rem;
+  transition: all 0.3s;
+  margin-left: 8.6%;
 }
 
 form {
-    width: 80%;
+  width: 80%;
 }
 
 .contaner-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 form textarea {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 form input,
 form textarea {
-    background-color: #888;
-    border: 0;
+  background-color: #888;
+  border: 0;
 }
 
 .form-control {
-    background-color: #F3F4F2;
-
+  background-color: #f3f4f2;
 }
 
 input::placeholder {
-    color: #fff;
-    /* Change this to the desired color */
+  color: #fff;
+  /* Change this to the desired color */
 }
 
 /* END Contact SECTION */
 
 footer {
-    background-color: #0C1E25;
-    text-align: center;
+  background-color: #0c1e25;
+  text-align: center;
 }
 
 footer h3 {
-    font-size: 1.875rem;
-    word-spacing: .125rem;
-    color: #fff;
-    font-weight: 400;
-    line-height: 1.6;
+  font-size: 1.875rem;
+  word-spacing: 0.125rem;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.6;
 }

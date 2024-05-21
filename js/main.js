@@ -1,3 +1,20 @@
+$ (document).ready (function () {
+  var firstSectionHeight = $ ('#Home').height (); // Get the height of the first section
+
+  // Check scroll position and show/hide button
+  $ (window).scroll (function () {
+    if ($ (this).scrollTop () > firstSectionHeight) {
+      $ ('#btnUp').removeClass ('d-none'); // Show button
+    } else {
+      $ ('#btnUp').addClass ('d-none'); // Hide button
+    }
+  });
+
+  // Smooth scroll to top when button is clicked
+  $ ('#btnUp').click (function () {
+    $ ('html, body').animate ({scrollTop: 0}, 'slow');
+  });
+});
 // *==============*
 const sidebarWidth = $ ('#sidebar').width ();
 // Check if localStorage has a value for the sidebar state
@@ -17,15 +34,27 @@ function saveSidebarState (state) {
 
 // Handle close button click
 $ ('#close').click (function () {
-  $ ('#sidebar').animate ({left: `-${sidebarWidth}px`}, 'slow');
+  $ ('#sidebar').animate ({left: `-${sidebarWidth}px `}, 'slow');
   $ ('html, body').animate ({scrollTop: 0}, 'slow');
   saveSidebarState ('closed'); // Save the closed state
 });
 
 // Handle toggle button click
-$ ('.toggle-btn').click (function () {
-  $ ('#sidebar').animate ({left: '0'}, 'slow');
-  saveSidebarState ('open'); // Save the open state
+$ (document).ready (function () {
+  var sidebarOpen = false; // Initialize the sidebar state
+
+  $ ('.toggle-btn').click (function () {
+    if (sidebarOpen) {
+      // If the sidebar is open, close it
+      $ ('#sidebar').animate ({left: '-252px'}, 'slow'); // Adjust '-250px' based on the sidebar width
+      saveSidebarState ('closed'); // Save the closed state
+    } else {
+      // If the sidebar is closed, open it
+      $ ('#sidebar').animate ({left: '0'}, 'slow');
+      saveSidebarState ('open'); // Save the open state
+    }
+    sidebarOpen = !sidebarOpen; // Toggle the sidebar state
+  });
 });
 
 // & ========== &
